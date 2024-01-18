@@ -1,0 +1,175 @@
+/*========== Base ==========*/
+
+:root{
+    --first-color: #45AAB8;
+    --second-color: #F9EBB2;
+    --body-font: 'Roboto', sans-serif;
+    --text-color: #000000;
+}
+
+body,
+button,
+input{
+    font-family: var(--body-font);
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+    padding-left: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/*========== Layout ==========*/
+
+.navbar{
+    width: 20%;
+}
+
+.container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.text-align-center{
+    text-align: center;
+}
+
+.section-title{
+    color: var(--first-color);
+}
+
+.border-y-1{
+    border: 1px solid var(--first-color);
+    border-left: 0;
+    border-right: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.text-transform-upper{
+    text-transform: uppercase;
+}
+
+
+/*========== Styles ==========*/
+.content{
+    width: 100%;
+}
+
+.information{
+    width: 40%;
+}
+
+.image{
+    background-color: var(--first-color);
+    border-radius: 100%;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.image img{
+    border-radius: 100%;
+   
+}
+
+
+.link-icon {
+    max-width: 25px;
+    padding: 10px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: var(--text-color);
+}
+
+
+
+
+
+/*========== Skill Bar Gradient ==========*/
+.skill-set__bar {
+    width: 100%;
+    height: 0.9rem;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 5px 7px 0 rgba(7, 33, 66, 0.15);
+}
+.skill-set__bar:after {
+    -webkit-animation: ratio90 1.5s forwards;
+    animation: ratio90 1.5s forwards;
+}
+.skill-set__bar:after {
+    background-color: var(--first-color);
+}
+
+.skill-set__bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.skills-item {
+    display: flex;
+}
+
+.skill-icon {
+    max-width: 40px;
+}
+
+.skill-details {
+    width: 100%;
+}
+
+.skill-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.25rem;
+}
+
+.skill-name{
+    font-weight: 400;
+}
+
+.p90::after{
+    width: 90%;
+}
+
+.p80::after{
+    width: 80%;
+}
+
+.p60::after{
+    width: 60%;
+}
