@@ -5,6 +5,7 @@
     --second-color: #F9EBB2;
     --body-font: 'Roboto', sans-serif;
     --text-color: #000000;
+    --small-font-size: 0.82rem;
 }
 
 body,
@@ -109,13 +110,10 @@ a{
 }
 
 
-
-
-
 /*========== Skill Bar Gradient ==========*/
 .skill-set__bar {
     width: 100%;
-    height: 0.9rem;
+    height: 0.8rem;
     background: #fff;
     position: relative;
     border-radius: 10px;
@@ -172,4 +170,46 @@ a{
 
 .p60::after{
     width: 60%;
+}
+
+
+/*========== Studies ==========*/
+
+.studies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studies-logo{
+    display: inline-flex;
+    position: relative;
+}
+
+
+.studies-logo img{
+    max-width: 150px;
+}
+
+.studies-logo__tag{
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    position: absolute;
+    font-size: var(--small-font-size);
+    right: 0;
+}
+
+.studies-details{
+    text-align: center;
+}
+
+.studies-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--first-color);
+    padding: 1rem;
+    border-radius: 20px;
 }
