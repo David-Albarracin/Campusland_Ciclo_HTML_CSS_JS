@@ -6,6 +6,7 @@
     --body-font: 'Roboto', sans-serif;
     --text-color: #000000;
     --small-font-size: 0.82rem;
+    --container-color: #ebebeb;
 }
 
 body,
@@ -29,12 +30,16 @@ a{
     text-decoration: none;
 }
 
-
+tr{
+    padding: 1rem;
+    vertical-align: top;
+}
 
 /*========== Layout ==========*/
 
 .navbar{
     width: 20%;
+    padding-right: 5%;
 }
 
 .container{
@@ -85,7 +90,6 @@ a{
 
 .information{
     text-align: -webkit-center;
-    vertical-align: text-top;
 }
 
 .not-flex-center{
@@ -93,11 +97,11 @@ a{
 }
 
 
-.image{
+/* .image{
     background-color: var(--first-color);
     border-radius: 100%;
     padding: 1rem 0.5rem 0 0.5rem;
-}
+} */
 
 .image img{
     border-radius: 100%;
@@ -153,7 +157,8 @@ a{
 
 .skills-item {
     /* display: flex; */
-    border: 1px solid var(--first-color);
+    /* border: 1px solid var(--first-color); */
+    display: -webkit-flex;
 }
 
 .skill-icon {
@@ -166,6 +171,7 @@ a{
 
 .skill-meta {
     /* display: flex; */
+    display: -webkit-flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 0.25rem;
@@ -228,7 +234,7 @@ a{
     border: 1px solid var(--first-color);
     padding: 1rem;
     border-radius: 20px;
-    max-width: 250px;
+    max-width: 350px;
 }
 
 
@@ -237,7 +243,7 @@ a{
 
 .stack{
     position: relative;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .stack-container{
@@ -260,3 +266,57 @@ a{
     max-width: 50px;
 }
 
+/*========== Proyects ==========*/
+
+.proyect {
+    max-width: 350px;
+    padding: 0.5rem;
+    background-color: var(--container-color);
+    border-radius: 20px;
+}
+
+.proyect-img {
+    border-radius: 20px;
+}
+
+.proyect-body {
+    padding: 1rem;
+}
+
+.proyect-tag {
+    background-color: var(--first-color);
+    color: white;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0.5rem;
+}
+
+
+/*========== Inputs ==========*/
+
+
+.input-container {
+    padding: 1rem;
+    position: relative;
+    /* width: auto; */
+}
+
+.input-container input, textarea {
+    width: 100%;
+    border-radius: 20px;
+    max-width: 350px;
+    padding: 1rem;
+    border: 2px solid var(--first-color );
+}
+
+.input-container label {
+    position: absolute;
+    background: white;
+    padding: 0 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    top: 0;
+    border-radius: 20px;
+}
+
+/*========== Buttons ==========*/
